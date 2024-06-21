@@ -1,8 +1,10 @@
 #include <iostream>
 #include <cstdlib>
- 
+#include <Windows.h>
+
 using namespace std;
- 
+SetConsoleCP(1251);
+SetConsoleOutputCP(1251);
 int min10(int massive[100], int n, int &save)
 {
     int s = 0;
@@ -47,7 +49,7 @@ int main()
     
     min10(massive, 0, p);
     
-    cout << "Minimum position: " << p << endl << endl;
+    cout << "Минимальная позиция: " << p << endl << endl;
  
     system("pause");
 }
